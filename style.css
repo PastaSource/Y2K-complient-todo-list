@@ -1,0 +1,92 @@
+body {
+  margin-top: 0px;
+  padding: 0px 20px; 
+
+}
+
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 5em;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+#scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  font-size: 1.5em;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  text-align: right;
+  color:olivedrab;
+  text-shadow: 
+  -5px 5px 15px dimgrey;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+#shopList {
+  /* display: grid; */
+
+}
+
+#addItem {
+  padding: 20px;
+  font-size: 1em;
+}
+
+button {
+  font-size: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 10em 10em auto;
+  font-size: 1.5em;
+
+
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  /* display: grid; */
+  /* flex-flow: row wrap; */
+}
